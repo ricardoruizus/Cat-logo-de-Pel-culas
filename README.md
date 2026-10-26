@@ -9,22 +9,18 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 The TMDB API key is read only by the server. It must not be placed in Angular
 environment files, committed to Git, or exposed in browser code.
 
-Create a local `.env` file from `.env.example` and set `TMDB_API_KEY`:
+Create a local `.env` file from `.env.example` and set `TMDB_API_KEY`. The
+development command loads this file automatically:
 
 ```bash
 cp .env.example .env
+npm start
 ```
 
-Or provide it directly in the shell:
+Alternatively, provide the variable directly in the shell:
 
 ```bash
 TMDB_API_KEY=your_key npm start
-```
-
-To start a local development server, run:
-
-```bash
-ng serve
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
